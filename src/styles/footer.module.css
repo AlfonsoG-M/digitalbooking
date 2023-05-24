@@ -1,0 +1,45 @@
+footer{
+    background-color: var(--mainColor);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 58px;
+    display: flex;
+}
+
+footer .container{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1824px;
+}
+
+footer div p{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700; 
+}
+
+footer div p:hover{
+    color: var(--secondaryColor);
+}
+
+footer div a i{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+
+footer div a i:hover{
+    color: var(--secondaryColor);
+}
+
+@media only screen and (max-width: 600px){
+
+    .icons{
+        display: none;
+    }
+
+}

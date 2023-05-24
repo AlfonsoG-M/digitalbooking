@@ -1,0 +1,130 @@
+.productCalendarContainer {
+  display: flex;
+  height: 450px;
+  background-color: var(--lightColor);
+  flex-direction: column;
+  padding: 1% 2.5%;
+}
+
+.productCalendarContainer h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.productCalendarContainer .container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productCalendarContainer .container .bookingContainer {
+  background-color: #ffff;
+  width: 410px;
+  height: 149px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCalendarContainer .container .bookingContainer p {
+  font-size: 15px;
+  color: #4f4f50;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.productCalendarContainer .container .bookingContainer a .button {
+  background-color: var(--mainColor);
+  border: none;
+  width: 380px;
+  height: 40px;
+  color: #ffff;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: var(--mainColor);
+  border: none;
+  width: 380px;
+  height: 40px;
+  color: #ffff;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .productCalendarContainer {
+    height: 482px;
+  }
+
+  .productCalendarContainer .container {
+    flex-direction: column;
+  }
+
+  .productCalendarContainer .container .bookingContainer {
+    width: 100%;
+    max-width: 820px;
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px 10px;
+  }
+  .productCalendarContainer .container .bookingContainer p {
+    margin: 0;
+    width: 55%;
+  }
+
+  .productCalendarContainer .container .bookingContainer a {
+    width: 45%;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+  }
+
+  .productCalendarContainer .container .bookingContainer a .button {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .productCalendarContainer .container .bookingContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .productCalendarContainer {
+    height: 500px;
+  }
+
+  .productCalendarContainer .container .bookingContainer {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .productCalendarContainer .container .bookingContainer p {
+    width: 90%;
+  }
+
+  .productCalendarContainer .container .bookingContainer a {
+    width: 90%;
+  }
+}

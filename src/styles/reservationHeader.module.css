@@ -1,0 +1,19 @@
+.container{
+    background-color: var(--mainColor);
+    padding: 0.3rem 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.container h1{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.container i{
+    color: white;
+    font-size: 31px;
+}

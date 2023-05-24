@@ -1,0 +1,34 @@
+.productMapContainer {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.mapContainer {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .mapContainer {
+      
+        height: 500px;
+    }
+
+    .productMapContainer{
+        height: 610px;
+    }
+}
+
+
+@media only screen and (max-width: 487px){
+    .mapContainer {
+        height: 307px;
+    }
+
+    .productMapContainer{
+        height: 445px;
+    }
+}

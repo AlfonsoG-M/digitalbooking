@@ -1,0 +1,112 @@
+.box {
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.imageCarouselContainer{
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.next {
+  align-items: center;
+  background-color: var(--mainColor);
+  border-radius: 40px;
+  z-index: 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12),
+  0px 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-weight: 100;
+  height: 18px;
+  justify-content: center;
+  margin: 5px;
+  top: 220px;
+  width: 18px;
+}
+
+.prev {
+  align-items: center;
+  background-color: var(--mainColor);
+  border-radius: 40px;
+  z-index: 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12),
+  0px 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-weight: 100;
+  height: 18px;
+  justify-content: center;
+  margin: 5px;
+  top: 220px;
+  width: 18px;
+}
+
+.thumbnails {
+  border-radius: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.carousel-item {
+  width: 100%;
+  height: 470px;
+  position: relative;
+}
+
+.carousel-item img{
+  border-radius: 10px 10px 0 0;
+}
+
+.slide-number {
+  color: var(--fontColor) !important;
+  margin-bottom: -50px;
+  left: 49% !important;
+}
+
+.thumbnail {
+  border-radius: 5px;
+  height: 107px;
+  margin-top: 35px;
+  object-fit: cover !important;
+  width: 165px;
+}
+
+.active-thumbnail{
+  border-color: white;
+  padding: 0;
+}
+
+.buttonConflict .iConflict{
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  overflow-y: auto;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 900px){
+  .slide-number {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px !important;
+    top: 400px !important;
+    color: white !important;
+  }
+
+  i.fa-sharp.fa-solid.fa-xmark::before{
+    display: none;
+  }
+}

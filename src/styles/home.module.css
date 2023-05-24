@@ -1,0 +1,8 @@
+.home{
+    margin-bottom: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}

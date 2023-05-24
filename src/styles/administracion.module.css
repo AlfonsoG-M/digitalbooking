@@ -1,0 +1,269 @@
+.divContainerAll{
+  background-color: var(--lightColor);
+  padding-bottom: 78px;
+}
+
+.containerAdm{
+  padding: 1rem 2.5% 1rem;
+}
+
+.containerAdm h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  color: var(--fontColor);
+}
+
+.register-form {
+  background-color: white;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.register-form .mainInfoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.register-form .mainInfoDiv .inputContainer {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.register-form .mainInfoDiv .inputContainer .smallInputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.register-form .mainInfoDiv .inputContainer .smallInputContainer label {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form .mainInfoDiv .inputContainer .smallInputContainer .form-small-input {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.register-form .descripcionDiv .smallInputContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.register-form .descripcionDiv .smallInputContainer label{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.register-form .descripcionDiv .smallInputContainer .descripcionInput {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  height: 100px;
+  width: 100%;
+}
+
+.atributosDiv h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* .atributosDiv {
+  margin-left: 20%;
+  margin-right: 2%;
+  margin-top: 30px;
+} */
+
+/* .smallAtDiv {
+  background-color: rgb(242, 246, 246);
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 10px;
+} */
+
+/* .smallAtDiv label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .smallInputContainer select {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  width: 100%;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../assets/media/arrowSelect.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 0.8rem;
+} */
+
+.register-form .politicasDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form .politicasDiv h3 {
+  color: var(--fontColor);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.register-form .politicasDiv .politicasContainerDiv {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  /* border: none; */
+  display: flex;
+  padding: 15px;
+  margin-top: 5px;
+  gap: 15px;
+}
+
+.register-form .politicasDiv .politicasContainerDiv .politicasUnitDiv {
+  /* margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  padding-bottom: 10px; */
+}
+
+.register-form .politicasDiv .politicasContainerDiv .politicasUnitDiv h4 {
+  font-size: 16px;
+  /* margin-top: 1rem; */
+}
+
+.register-form .politicasDiv .politicasContainerDiv .politicasUnitDiv label {
+  /* font-size: 10px;
+  font-weight: 700;
+  width: 100%; */
+}
+
+.register-form .politicasDiv .politicasContainerDiv .politicasUnitDiv select {
+  appearance: none;
+  background-image: url("../assets/media/arrowSelect.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 0.8rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  height: 40px;
+  margin-left: 0px;
+  margin-top: 10px;
+  /* margin-right: 1rem; */
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.register-form .imagenesDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form .imagenesDiv h3 {
+  color: var(--secondaryColor);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 25px 0 10px 0;
+}
+
+.register-form .imagenesDiv .smallInputContainerImg{
+  display: flex;
+  /* margin-bottom: 20px;
+  margin-top: 20px; */
+  position: relative;
+}
+
+.register-form .imagenesDiv .smallInputContainerImg .form-small-inputImg{
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  height: 40px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+
+.register-form .imagenesDiv .smallInputContainerImg .addImg{
+  background-color: var(--mainColor);
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12);;
+  color: white;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+}
+
+.register-form .imagenesDiv .smallInputContainerImg .addImg i{
+  font-size: 30px;
+}
+
+.register-form .divButton{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.register-form .divButton .submit-button{
+  background-color: var(--mainColor);
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12);;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  width: 400px;
+}
+
+@media only screen and (max-width: 900px){
+
+  .register-form .politicasDiv .politicasContainerDiv {
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+
+  .register-form .mainInfoDiv .inputContainer {
+    flex-direction: column;
+  }
+
+  .register-form .divButton .submit-button{
+    width: 100%;
+  }
+}

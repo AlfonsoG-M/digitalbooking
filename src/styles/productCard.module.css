@@ -1,0 +1,229 @@
+.containerRecoCard{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 100%;
+    width: 49%;
+}
+
+.containerRecoCard .imgDiv{
+    height: 283px;
+    width: 49%;
+    position: relative;
+}
+
+.containerRecoCard .imgDiv img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.containerRecoCard .imgDiv i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.containerRecoCard .imgDiv i:hover{
+    transform: scale(1.05);
+}
+
+.containerRecoCard .imgDiv i:active{
+    transform: scale(0.99);
+}
+
+/*--- INFO CARD ---*/
+
+/* //HEADER */
+.containerRecoCard .infoCard{
+    width: 51%;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerRecoCard .infoCard .headerCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerRecoCard .infoCard .headerCard .titleDiv p{
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
+
+.containerRecoCard .infoCard .headerCard .titleDiv p .mainColorStar{
+    color: var(--mainColor);
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.containerRecoCard .infoCard .headerCard .titleDiv p .mainColorStar .lightColorStar{
+    color: var(--lightColor);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+.imageRecoDiv{
+    width: 50%;
+}
+
+.imageRecoDiv i{
+    margin-top: -200px;
+}
+
+.imageRecoDiv i{
+    position: absolute;
+    color: var(--mainColor);
+    font-size: 24px;
+    right: 30px;
+    top: 20px;
+}
+
+.containerRecoCard .infoCard .headerCard h2{
+    color: var(--fontColor);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.containerRecoCard .infoCard .headerCard .calificationDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.containerRecoCard .infoCard .headerCard .calificationDiv p{
+    font-size: 1.25rem;
+    color: white;
+    background-color: var(--mainColor);
+    font-weight: 700;
+    width: 34px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.containerRecoCard .infoCard .headerCard .calificationDiv h4{
+    text-align: right;
+}
+
+/* //LOCATION */
+
+.containerRecoCard .infoCard .locationDiv{
+    display: flex;
+}
+
+.containerRecoCard .infoCard .locationDiv i{
+    color: var(--secondayColor);
+}
+
+.containerRecoCard .infoCard .locationDiv p{
+    color: var(--secondayColor);
+    font-weight: 500;
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerRecoCard .infoCard .locationDiv p span{
+    color: var(--mainColor);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.containerRecoCard .infoCard .locationDiv p span:hover{
+    transform: scale(1.04);
+}
+
+/* //DESCRIPTION */
+
+.containerRecoCard .descriptionCard{
+    margin-top: 20px;
+}
+
+.containerRecoCard .descriptionCard p{
+    color: var(--fontColor);
+    font-weight: 500;
+}
+
+.containerRecoCard .descriptionCard p span a{
+    padding-left: 4px;
+    color: var(--mainColor);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.containerRecoCard .descriptionCard button{
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.containerRecoCard .descriptionCard button:hover{
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.30);
+    transform: scale(1.01);
+}
+  
+.containerRecoCard .descriptionCard button:active{
+    transform: scale(0.99);
+}
+
+
+@media only screen and (max-width: 1440px){
+
+    .containerRecoCard{
+        width: 100%;
+    }
+
+    .containerRecoCard .imgDiv{
+        /* height: 283px; */
+    }
+
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .containerRecoCard{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerRecoCard .imgDiv{
+        width: 100%;
+        height: 283px;
+    }
+
+    .containerRecoCard .imgDiv img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .containerRecoCard .infoCard{
+        width: 100%;
+        height: 50%;
+ 
+    }
+
+
+}

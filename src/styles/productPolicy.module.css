@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.container h2{
+    padding: 0 2.5%;
+    font-size: 1.5rem;
+}
+
+.container hr{
+    border: 1px solid var(--mainColor);
+    margin-top: 10px;
+}
+
+.container .policyGrid{
+    padding: 2rem 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 1rem;
+}
+
+.container .policyGrid .rulesGrid{
+    display: grid;
+    grid-template-rows: 2.2rem auto auto auto;
+    row-gap: 1rem;
+}
+
+.container .policyGrid .rulesGrid .rulesTitle{
+    color: var(--fontColor);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.container .policyGrid .rulesGrid .ruleP{
+    color: var(--fontColor);
+    font-weight: 500;
+}
+
+.container .policyGrid .securityGrid{
+    display: grid;
+    grid-template-rows: 2.2rem auto auto auto;
+    row-gap: 1rem;
+}
+
+.container .policyGrid .securityGrid .securityTitle{
+    color: var(--fontColor);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.container .policyGrid .securityGrid .securityP{
+    color: var(--fontColor);
+    font-weight: 500;
+}
+
+.container .policyGrid .cancellationGrid{
+    display: grid;
+    grid-template-rows: 2.2rem auto auto auto;
+    row-gap: 1rem;
+}
+
+.container .policyGrid .cancellationGrid .cancellationTitle{
+    color: var(--fontColor);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.container .policyGrid .cancellationGrid .cancellationP{
+    color: var(--fontColor);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container .policyGrid{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container .policyGrid{
+        grid-template-columns: 1fr;
+
+    }
+
+}

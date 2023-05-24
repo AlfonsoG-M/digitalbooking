@@ -1,0 +1,81 @@
+
+.datePickerContainer {
+    background-color: #fff;
+    width: 422px;
+    height: 40px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    gap: 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.datePickerContainer input {
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 35px;
+}
+
+.datePickerContainer input::placeholder {
+    font-weight: 500;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 5px;
+}
+
+.button {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    background-color: var(--mainColor);
+    border: none;
+    width: 206px;
+    align-self: flex-end;
+    height: 40px;
+    color: #ffff;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+form button {
+    margin-top: 0rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .datePickerContainer {
+        width: 254px;
+    }
+    .button {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .datePickerContainer {
+        width: 95%;
+    }
+
+    .datePickerContainer input {
+        width: 95%;
+    }
+
+    .button {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 486px) {
+    .button {
+        width: 85%;
+    }
+}

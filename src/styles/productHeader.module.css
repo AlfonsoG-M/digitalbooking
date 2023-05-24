@@ -1,0 +1,23 @@
+.container{
+    background-color: var(--mainColor);
+    padding: 0.3rem 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .title{
+    color: white;
+    font-weight: 700;
+}
+
+.container .title h2{
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.container i{
+    color: white;
+    font-size: 31px;
+}

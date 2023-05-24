@@ -1,0 +1,120 @@
+.selectCity{
+    width: 100%;
+}
+.inputCity {
+    position: relative;
+    width: 422px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border: none;
+    font-size: 14px;
+    color: #7F7F7F;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    padding-left: 45px;
+    padding-top: 10px;
+}
+  
+.dropdownContainer {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+    top: 38px;
+    left: 0;
+    font-weight: 700;
+    margin-top: 3px;
+    padding: 0px 0px 10px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 6px 13px 5px #383b58;
+}
+
+.dropdownContainer div {
+    color: black;
+    width: 90%;
+    text-align: start;
+    font-size: 14px;
+    height: 50px;
+    display: flex;
+    padding-left: 25px;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.dropdownContainer div:not(:last-child) {
+    border-bottom: 1px solid var(--mainColor);
+}
+
+.dropDownCityName {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.dropDownCountryName {
+    font-size: 12px;
+    font-weight: 700;
+    color: #7F7F7F;
+    width: 0px;
+    pointer-events: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    align-self: flex-start;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    height: 26px;
+    width: 18px;
+
+
+}
+
+.dropDownIcon {
+    position: absolute;
+    left: 10px;
+    width: 17px;
+    height: 23px;
+    pointer-events: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .inputCity{
+        width: 50%;
+        font-size: 13px;
+    }
+    
+    .dropdownContainer div {
+        width: 100%;
+        padding-left: 35px;
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+
+    .inputCity{
+        width: 95%;
+    }
+  
+    .dropdownContainer div {
+        width: 95%;
+        padding-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 487px){
+   
+}

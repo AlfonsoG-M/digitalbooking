@@ -1,0 +1,161 @@
+.container{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+
+.container>h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--fontColor);
+  font-weight: 700;
+  padding: 15px;
+}
+
+.container .containerCard{
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+}
+
+.container .containerCard img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.container .containerCard .infoCard{
+  padding: 25px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container .containerCard .infoCard .categoryTitle{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondaryColor);
+}
+
+.container .containerCard .infoCard .infoHeader>h2{
+  font-size: 1.5rem;
+  color: var(--fontColor);
+  line-height: 1.2rem;
+}
+
+.container .containerCard .infoCard .infoHeader span{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--mainColor);
+}
+
+.container .containerCard .infoCard .infoHeader .locationDiv{
+  display: flex;
+  align-items: center;
+  color: var(--secondaryColor);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 35px 0;
+}
+
+.container .containerCard .infoCard .infoHeader .locationDiv p{
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.container .containerCard .infoCard hr{
+  margin-bottom: 15px;
+}
+
+.container .containerCard .infoCard .check{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.container .containerCard .infoCard .check p{
+  color: var(--fontColor);
+  font-weight: 600;
+}
+
+
+
+.container .containerCard .infoCard .confirmarReserva {
+  background-color: var(--mainColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 25px;
+  line-height: 40px;
+  width: 100%;
+}
+
+.container .containerCard .infoCard .confirmarReserva:hover{
+  cursor: pointer;
+  background-color: rgb(222, 63, 20);
+}
+
+.container .containerCard .infoCard .confirmarReserva:active{
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.70);
+  transform: scale(0.99);
+}
+
+@media(max-width: 900px) {
+
+  .container>h2{
+    height: none;
+  }
+
+  .container .containerCard{
+    flex-direction:row;
+    height: 100%;
+  }
+
+  .container .containerCard img{
+    width: 50%;
+    height: auto;
+    margin: 0 0 25px 15px;
+    border-radius: 5px;
+  }
+
+  .container .containerCard .infoCard{
+    width: 50%;
+    padding: 0px 15px 25px 15px;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .container .containerCard .infoCard .categoryTitle{
+    margin-top: 0px;
+  }
+
+}
+
+@media(max-width: 600px) {
+
+  .container .containerCard{
+    flex-direction:column;
+  }
+
+  .container .containerCard img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .container .containerCard .infoCard{
+    width: 100%;
+  }
+
+  .container .containerCard .infoCard .categoryTitle{
+    margin-top: 10px;
+  }
+
+}

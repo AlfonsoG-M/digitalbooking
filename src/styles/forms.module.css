@@ -1,0 +1,203 @@
+.container{
+    position: relative;
+}
+
+.container .failReserva{
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(255, 186, 186);
+    border-radius: 10px;
+    width: 500px;
+    font-weight: 600;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+
+}
+
+.container .failReserva i{
+    font-size: 2rem;
+}
+
+.container h2{
+    margin: 1vh auto;
+    text-align: center;
+    width: 100%;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.titulo-login {
+    position: relative;
+    top: 15vh;
+}
+
+.error-reserva{
+    background-color: red;
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+}
+
+.error-input {
+    border: solid red 1px !important;
+}
+
+.error-msg {
+    color: red;
+    font-size: small;
+    text-align: end;
+    width: 100%;     
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    width: 30vw;
+    margin: 20vh auto;
+    min-height: 220px;    
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin: 5vh auto;
+    min-height: 517px;
+}
+
+.form-input {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5rem 10px;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.form-small-input {
+    width: 100%;
+    padding: 0.5rem 10px;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: 0;
+}
+
+.register-form label {
+    width: 100%;
+    text-align: start;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.small-input-container label {    
+    width: 100%;
+    text-align: start;
+}
+
+.small-input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;    
+    min-height: 116px;
+    height: 100%;
+}
+
+.nombre-apellido {
+    display: flex;
+    width:100%;
+    gap: 20px;
+}
+
+.submit-button {    
+    margin-top: 2rem;
+    background-color: var(--mainColor);
+    padding: 15px 100px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: white;
+    border: 0px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.12);;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    background-color: rgb(222, 63, 20)
+}
+
+.submit-button:active{
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.70);
+    transform: scale(0.99);
+}
+
+.link-login {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.link {
+    color: var(--mainColor);
+}
+
+.small-input-container i{
+    position: absolute;
+    cursor: pointer;
+    left: 92%;
+    top: 45%
+}
+
+@media(max-width: 1366px) {
+    .login-form{
+        width: 50vw;
+    }
+    .register-form{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .container .failReserva{
+        width: 70%;
+    }
+
+    .login-form{
+        width: 55vw;
+    }
+    .register-form{
+        width: 55vw;
+    }
+    .nombre-apellido {
+        flex-direction: column;
+    }
+    form button{ 
+        font-size: 14px;
+        
+    }
+}
+
+@media(max-width: 480px) {
+    .login-form{
+        width: 70vw;
+    }
+    .register-form{
+        width: 70vw;
+    }
+}

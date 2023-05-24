@@ -1,0 +1,88 @@
+.imagesDescriptionContainer{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 40px 0px;
+}
+
+.principalImgContainer{
+    border-radius: 10px;
+    height: 388px;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.secundaryImg{
+    border-radius: 10px;
+    height: 186px;
+}
+
+.productImg{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.verMasP{
+    color: white;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: -50px;
+    text-align: right;
+
+}
+
+.imageCarouselContainer{
+    background-color: var(--secondaryColor);
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    position: fixed;
+    top: 80px;
+    width: 100vw;
+    z-index: 2;
+    display: none;
+}
+
+.carouselImg{
+    margin: auto;
+}
+
+.carouselBtn{
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    border: none;
+    right: 115px;
+    top: 25px;
+}
+
+.carouselBtn i{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 900px){
+    .imagesDescriptionContainer{
+        
+    }
+}
+
+
+
+/* @media only screen and (max-width: 900px){
+
+    .imagesDescriptionContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .secundaryImg{
+        display: none;
+    }
+
+    
+} */
+

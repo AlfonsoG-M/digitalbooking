@@ -1,0 +1,47 @@
+.productMapContainer {
+    height: 650px;
+    z-index: 0;
+}
+
+.productMapContainer hr{
+    border: 1px solid var(--mainColor);
+    margin-top: 10px;
+}
+
+.productMapContainer h2{
+    padding: 0 2.5%;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+.productMapContainer p {
+    margin-top: 5px;
+    padding: 0 2.5%;
+    font-size: 16px;
+
+}
+.mapContainer {
+    margin: 0 2.5%;
+    height: 540px;
+}
+
+@media only screen and (max-width: 900px) {
+    .mapContainer {
+      
+        height: 500px;
+    }
+
+    .productMapContainer{
+        height: 610px;
+    }
+}
+
+
+@media only screen and (max-width: 487px){
+    .mapContainer {
+        height: 307px;
+    }
+
+    .productMapContainer{
+        height: 445px;
+    }
+}

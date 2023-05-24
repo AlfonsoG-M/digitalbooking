@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.container i{
+    color: var(--mainColor);
+}
+
+.container p{
+    color: var(--fontColor);
+    font-weight: 500;
+}

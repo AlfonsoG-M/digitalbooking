@@ -1,0 +1,51 @@
+.containerTime{
+    background-color: white;
+    padding: 1rem 2.5%;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.containerTime .checkDiv{
+  display: flex;
+  align-items: center;
+}
+
+.containerTime .checkDiv p{
+  color: var(--fontColor);
+  font-weight: 700;
+}
+
+.containerTime .checkDiv i{
+  padding-right: 5px;
+  font-size: 1.2rem;
+  color: var(--fontColor);
+  font-weight: 500;
+}
+
+.containerTime label{
+  margin-top: 0.6rem;
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+}
+
+.containerTime select{
+  margin-top: 0.4rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  width: 50%;
+  min-width: 300px;
+  height: 40px;
+  padding-left: 1rem;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../assets/media/arrowSelect.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 0.8rem;
+}

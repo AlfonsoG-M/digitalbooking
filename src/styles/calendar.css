@@ -1,0 +1,305 @@
+/************************ VISTA HOME ************************/
+.react-datepicker {
+  position: relative;
+  width: 605px;
+  height: 365px;
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.react-datepicker__month-container {
+  width: 50%;
+}
+
+.react-datepicker__header{
+  background-color: #fff;
+
+}
+
+.react-datepicker__current-month {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px
+}
+
+.react-datepicker__day {
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.react-datepicker__day-name {
+  margin: 5px;
+}
+
+.react-datepicker__navigation {
+  color: var(--secondaryColor);
+  top: 7px;
+}
+
+.react-datepicker__day--outside-month{
+  color: #c0c0c0;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--in-range:hover,
+.react-datepicker__day--in-selecting-range:hover {
+  border-radius: 50%;
+  background-color: var(--mainColor);
+}
+
+
+input {
+  font-size: 14px;
+}
+/************************ VISTA PRODUCT ************************/
+
+
+.bookingCalendar-container.react-datepicker {
+  width: auto;
+  padding: 0 30px;
+  height: 320px;
+}
+
+
+.bookingCalendar-container .react-datepicker__header {
+  background-color: #fff;
+  border-bottom: 0;
+}
+
+.bookingCalendar-container .react-datepicker__month-container{
+  pointer-events: none;
+}
+
+.bookingCalendar-container .react-datepicker__day {
+  margin-right: 20px;
+}
+
+
+.bookingCalendar-container .react-datepicker__day-name {
+  margin-right: 20px;
+}
+
+.bookingCalendar-container .react-datepicker__navigation {
+  top: 140px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: var(--mainColor);
+  z-index: 0;
+}
+
+.bookingCalendar-container .react-datepicker__year-read-view--down-arrow,
+.bookingCalendar-container .react-datepicker__month-read-view--down-arrow,
+.bookingCalendar-container .react-datepicker__month-year-read-view--down-arrow,
+.bookingCalendar-container .react-datepicker__navigation-icon::before {
+  border-color: #fff;
+  left: -6px;
+  top: 8px;
+}
+
+/************************ VISTA BOOKING ************************/
+
+.bookingCalendar-container.booking{
+  width: 100%;
+  padding: 0 30px;
+  height: 297px;
+  border-radius: 10px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+}
+
+
+
+/* .bookingCalendar-container.booking .react-datepicker__navigation{
+  top: 140px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: var(--mainColor);
+  z-index: 0;
+} */
+
+.bookingCalendar-container.booking .react-datepicker__month-container{
+  width: 100%;
+}
+
+.bookingCalendar-container.booking .react-datepicker__header {
+  background-color: white;
+  border-bottom: none;
+  width: 100%;
+}
+
+.bookingCalendar-container.booking .react-datepicker__month-container{
+  pointer-events: painted;
+}
+
+.bookingCalendar-container.booking .react-datepicker__month{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bookingCalendar-container.booking .react-datepicker__current-month{
+  font-size: 1rem;
+  padding: 0;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.bookingCalendar-container.booking .react-datepicker__day {
+  margin: 3px 5px;
+  /* font-weight: 600; */
+  font-size: 1rem;
+}
+
+.bookingCalendar-container.booking .react-datepicker__day-name {
+  padding: 0;
+  margin: 3px 5px;
+  /* font-weight: 600; */
+}
+
+
+
+@media only screen and (max-width: 1300px){
+  .bookingCalendar-container.react-datepicker{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .bookingCalendar-container.booking{
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+ 
+}
+
+@media only screen and (max-width: 900px){
+  .bookingCalendar-container .react-datepicker__navigation {
+      background-color: #fff;
+      color: #000;
+      top: 10px;
+      margin: 5px;
+      z-index: 1;
+  }
+  .bookingCalendar-container .react-datepicker__year-read-view--down-arrow,
+  .bookingCalendar-container .react-datepicker__month-read-view--down-arrow,
+  .bookingCalendar-container .react-datepicker__month-year-read-view--down-arrow,
+  .bookingCalendar-container .react-datepicker__navigation-icon::before {
+      border-color:var(--secondaryColor); 
+  }
+
+
+
+}
+
+@media only screen and (max-width: 799px) {
+input::placeholder{
+  font-size: 13px;
+ }
+  .react-datepicker {
+      width: 100%;
+  }
+
+  .react-datepicker__header {
+      text-align: center;
+      width: 100%;
+  }
+
+  .react-datepicker__month-container {
+      border: 0;
+      width: 50%;
+  }
+
+  .bookingCalendar-container .react-datepicker__month-container{
+      width: 100%;
+   }
+
+}
+
+@media only screen and (max-width: 600px){
+  .react-datepicker {
+      width: 100%;
+      height: 325px;
+  }
+   
+  .react-datepicker__header {
+      text-align: center;
+      width: 90%;
+  }
+
+  .react-datepicker__month-container {
+      border: 0;
+      width: 50%;
+  }
+
+  .react-datepicker__day{
+      font-size: 10px;
+      margin: 2px;
+  }
+
+  .react-datepicker__day-name{
+      margin : 2px;
+  }
+
+  .bookingCalendar-container .react-datepicker__day {
+      font-size: 14px;
+  }
+
+  .bookingCalendar-container .react-datepicker__header {
+     width: 100%;
+  }
+ 
+}
+
+@media only screen and (max-width: 480px) {
+  .react-datepicker {
+      width: 100%
+  }
+  
+  .react-datepicker__month-container{
+      width: 100%;
+  }
+
+  .react-datepicker__week{
+      width: 50%;
+  }
+
+  .bookingCalendar-container.booking .react-datepicker__week{
+    width: 100%;
+}
+
+
+  .datePickerContainer {
+      width: 100%;
+  }
+
+  .react-datepicker__day{
+      font-size: 12px;
+  }
+  .react-datepicker__header {
+      text-align: center;
+      width: 100%;
+      height: auto;
+  }
+ 
+  .bookingCalendar-container .react-datepicker__day {
+      font-size: 14px;
+  }
+  .bookingCalendar-container.react-datepicker {
+      height: 300px;     
+      padding: 0; 
+}
+
+}

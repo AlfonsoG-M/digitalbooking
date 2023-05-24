@@ -1,0 +1,23 @@
+.containerReco{
+    background-color: var(--lightColor);
+    padding: 0 2.5% 1rem;
+    margin-top: 1rem;
+}
+
+.recoTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--fontColor);
+    font-weight: 700;
+}
+
+.containerReco .containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 1rem;
+}

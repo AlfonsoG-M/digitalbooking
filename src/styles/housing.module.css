@@ -1,0 +1,22 @@
+.containerList{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.containerList h2{
+    font-size: 1.5rem;
+    color: var(--fontColor);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.containerList .containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: calc((100% - 96%) / 3);
+    row-gap: 1.5rem;
+}
+

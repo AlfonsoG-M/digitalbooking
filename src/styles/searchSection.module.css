@@ -1,0 +1,95 @@
+.searchSectionContainer {
+    background-color: #31363F;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.filtersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 20px;
+}
+
+.searchTitle {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.button{
+    width: 206px;
+    height: 40px;
+    background-color: var(--mainColor);
+    border: none;
+    color: #ffff;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(222, 63, 20)
+}
+
+.button:active{
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.70);
+    transform: scale(0.99);
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        width: 166px;
+
+    }
+    .searchTitle {
+        font-size: 30px;
+    }
+    .filtersContainer {
+        width:100%;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .button {
+        width: 95%;
+        margin-bottom: 5px;
+    }
+
+    .searchSectionContainer {
+        height: auto;
+    }
+
+    .filtersContainer {
+      
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .searchSectionContainer p {
+        width: 100%;
+        height: fit-content;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+        text-align: center;
+        margin: 5px;
+    }
+}
